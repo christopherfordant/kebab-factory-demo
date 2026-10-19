@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --color-anthracite: #141414;
+  --color-anthracite-light: #1c1c1c;
+  --color-anthracite-card: #222222;
+  --color-brand-orange: #ff5400;
+  --color-brand-orange-deep: #c2410c;
+  --color-offwhite: #fcfbf9;
+  --color-offwhite-muted: #d4d4d8;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #141414;
+  color: #fcfbf9;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+/* Accessible anchor scroll margin to leave headings visible under sticky top bar */
+section[id] {
+  scroll-margin-top: 7rem; /* 112px */
+}
+
+/* Accessible focus ring */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #ff5400 !important;
+  outline-offset: 3px !important;
+}
+
+/* Reduced motion preference enforcement */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+

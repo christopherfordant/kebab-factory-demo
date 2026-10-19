@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kebab Factory — Restaurant Fictif</title>
+    <meta name="description" content="Site vitrine officiel de démonstration pour Kebab Factory, restaurant fictif de kebabs artisanaux, tacos gourmet, burgers smash et menus gourmands." />
+    <meta property="og:title" content="Kebab Factory — Restaurant Fictif" />
+    <meta property="og:description" content="Site vitrine officiel de démonstration pour Kebab Factory, restaurant fictif de kebabs artisanaux, tacos gourmet, burgers smash et menus gourmands." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- System fonts used for performance and privacy (no external Google Fonts requests) -->
+
+    <!-- Structured Data (JSON-LD) explicitly declaring educational / demo prototype status -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Kebab Factory (Fictif)",
+      "description": "Concept de restaurant et site vitrine de démonstration technique. Établissement fictif.",
+      "servesCuisine": ["Kebab", "Tacos Français", "Burgers Artisanaux"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "12 rue de la Braise (Adresse Fictive)",
+        "addressLocality": "Ville Démo",
+        "postalCode": "00000",
+        "addressCountry": "FR"
+      },
+      "email": "bonjour@kebab-factory.example",
+      "openingHours": [
+        "Mo-Sa 11:30-15:00",
+        "Mo-Sa 18:30-23:30",
+        "Su 18:00-23:00"
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-[#141414] text-[#fcfbf9] antialiased selection:bg-orange-500 selection:text-white min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
